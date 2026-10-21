@@ -1,0 +1,31 @@
+{
+  "online": true,
+  "botID": "61595550573278",
+  "botFbName": "Beatrice Bc",
+  "botName": "Beatrice bc",
+  "nickName": "✨ Beatrice bc ✨",
+  "prefix": ".",
+  "language": "en",
+  "startedAt": 1792573880337,
+  "uptimeMs": 2005343,
+  "commandsLoaded": 0,
+  "eventsLoaded": 0,
+  "threads": 0,
+  "users": 0,
+  "babyStfu": false,
+  "replyDelay": {
+    "enable": true,
+    "min": 2,
+    "max": 5,
+    "notes": "Random human-like delay before the bot replies. Values are SECONDS. The 'typing...' indicator is shown for the same duration. min = floor (will never reply faster than this). max = ceiling (will never take longer than this). Set enable=false to reply instantly."
+  },
+  "deleteOwnMessages": {
+    "enable": false,
+    "min": 30,
+    "max": 60,
+    "notes": "When enable=true the bot deletes (unsends) its OWN messages after a random delay between min and max SECONDS. When enable=false the bot keeps its messages forever. Same idea as the typing timer."
+  },
+  "babyDeveloperId": "100069977482239",
+  "nodeVersion": "v22.23.3",
+  "lastUpdate": 1792575885680
+}

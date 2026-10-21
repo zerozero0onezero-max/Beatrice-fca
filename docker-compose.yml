@@ -1,0 +1,27 @@
+version: '3.8'
+
+services:
+  beatrice:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: beatrice-fca
+    restart: unless-stopped
+    ports:
+      - '3000:3000'
+    environment:
+      - NODE_ENV=production
+      - PORT=3000
+      - GEMINI_API_KEY=${GEMINI_API_KEY:-}
+      - HF_HOME=/app/data/models_cache
+    volumes:
+      # Persistent local storage for AI models, Kokoro cache, and TTS outputs
+      - ./data:/app/data
+      # Persistent log entries
+      - ./logs:/app/logs
+      # Voice profiles
+      - ./voices:/app/voices
+      # Bot SQLite databases & chat statistics
+      - ./Beatrice-fca/core/database/data:/app/Beatrice-fca/core/database/data
+      # Facebook credentials and AppState
+      - ./Beatrice-fca/ncstate.json:/app/Beatrice-fca/ncstate.json:ro

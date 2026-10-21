@@ -1,0 +1,8 @@
+{
+  "name": "Remix Remix Remix Remix Beatrice-fca V",
+  "description": "لوحة تحكم وإدارة بوت فيسبوك Beatrice FCA مع تحكم بالأوامر وملفات تعريف الارتباط ncstate وسجلات التشغيل ومراقبة الحالة المباشرة",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
